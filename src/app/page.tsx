@@ -18,7 +18,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Items Manager</h1>
           <p className="text-gray-600">Manage your items with our REST API frontend</p>
           <div className="mt-4 text-sm text-gray-500">
-            API Backend: <span className="font-mono bg-gray-100 px-2 py-1 rounded">http://localhost:8000</span>
+            API Backend: <span className="font-mono bg-gray-100 px-2 py-1 rounded">{process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}</span>
           </div>
         </header>
 
